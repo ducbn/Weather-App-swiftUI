@@ -6,25 +6,25 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack{
-                Image("cloudyday")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+//                Image("cloudyday")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     VStack {
                         Text("Ha Noi")
                             .font(.largeTitle)
                             .padding(.top)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                         Text("\(Int(viewModel.forecast?.current.temp ?? 0))°C")
                             .font(.largeTitle)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                         
                         if let currentWeatherDescription = viewModel.forecast?.current.weather.first?.description {
                             Text("\(currentWeatherDescription)")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                         }
                         
                     }
